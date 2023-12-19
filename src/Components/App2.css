@@ -1,0 +1,195 @@
+/* App2.css */
+/* App2.css */
+
+/* Estilos generales para la aplicación */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.gestion-reclamos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-content {
+  width: 80%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 10px; /* Reducido el margen superior */
+}
+
+.titulo {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-nuevo-reclamo {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px; /* Reducido el margen inferior */
+  border-radius: 4px;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+}
+
+/* Estilos para el formulario dentro del modal */
+.modal-body form {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Estilos para la lista de reclamos */
+.lista-reclamos-container {
+  text-align: center;
+  color: #555;
+}
+
+.filtros-container {
+  display: flex;
+  flex-direction: column; /* Cambiado el diseño de fila a columna */
+  align-items: center; /* Centrar los elementos horizontalmente */
+  margin-bottom: 20px; /* Aumentado el margen inferior */
+}
+
+/* Estilos para el formulario de filtros */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column; /* Cambiado el diseño de fila a columna */
+  align-items: center; /* Centrar los elementos horizontalmente */
+}
+
+/* Estilos para los botones de filtros */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 30px; /* Ajusta según sea necesario */
+}
+
+/* Estilos para las tarjetas de reclamos */
+.card {
+  width: 100%;
+  max-width: 250px; 
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Estilos para los botones dentro de las tarjetas */
+.card .btn-primary,
+.card .btn-danger {
+  width: 100%;
+  padding: 8px; /* Reducido el padding */
+  margin-top: 8px; /* Reducido el margen superior */
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+/* Estilos para el grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Cambiado el diseño de columnas a una sola columna */
+  gap: 20px;
+  justify-items: center; /* Centrar los elementos horizontalmente */
+}
+
+.scrollable-list {
+  max-height: 400px; /* Altura máxima para la lista de reclamos */
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+}
+
+/* Estilos para el botón "Nuevo Reclamo" */
+.btn-nuevo-reclamo-container {
+  text-align: center;
+  margin-bottom: 20px; /* Ajusta según sea necesario */
+}
+
+.btn-nuevo-reclamo {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px; /* Ajusta según sea necesario */
+}
+
+/* Modal.css */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
